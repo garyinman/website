@@ -4,14 +4,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gary Inman">
 <meta property="og:title" content="Gary Inman | Growth, without losing what makes you special">
-<meta property="og:description" content="I work alongside owners and leadership teams of growing businesses, especially in construction, to see what comes next, make good decisions and make change stick.">
+<meta property="og:description" content="I work alongside owners and leadership teams of growing construction businesses to see what comes next, make good decisions and make change stick.">
 <meta property="og:url" content="https://garyinman.co.uk/">
 <meta property="og:image" content="https://garyinman.co.uk/img/share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="I work alongside owners and leadership teams of growing businesses, especially in construction, to see what comes next, make good decisions and make change stick.">
+<meta name="description" content="I work alongside owners and leadership teams of growing construction businesses to see what comes next, make good decisions and make change stick.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
@@ -179,6 +179,9 @@ a{color:inherit}
 .skills p{color:var(--muted);max-width:56ch}
 .xp{display:flex;flex-direction:column;gap:14px;margin-top:8px;padding-top:4px}
 .xp p{color:var(--muted);font-size:16px;margin:0;padding:0}
+.radar{display:flex;flex-direction:column;gap:12px;margin-top:8px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.radar ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;color:var(--muted)}
+.cred-line{font-size:14.5px;color:var(--muted);margin:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips a.chip-link{border:1px solid var(--brass);color:var(--brass);border-radius:999px;padding:7px 14px;font-size:15px;font-weight:600;text-decoration:none;background:var(--paper)}
 .chips a.chip-link:hover{background:var(--surface)}
@@ -417,6 +420,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <a href="about.html">About</a>
       <a class="pill" href="bids.html">Bids</a>
       <a class="pill" href="esg.html">ESG</a>
+      <a class="pill" href="ai.html">AI</a>
       <a class="btn btn-ink" href="#contact">Let's talk</a>
     </nav>
   </div>
@@ -427,9 +431,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   <section class="stage hero" aria-labelledby="hero-title">
     <div class="wrap">
       <div>
-        <div class="eyebrow">A partner to leaders in growing businesses</div>
+        <div class="eyebrow">For leaders of growing construction businesses</div>
         <h1 id="hero-title">Growth,<br><em>without losing what makes you special.</em></h1>
-        <p class="lede">As a business grows, it needs more from its leaders. I help owners and their teams, especially in construction, see what comes next, make good decisions, and make change stick.</p>
+        <p class="lede">As a construction business grows, it needs more from its leaders. I help owners and their teams see what comes next, make good decisions, and make change stick, on site and in the office.</p>
         <div class="cta">
           <a class="btn btn-gold" href="#contact">Start with a conversation</a>
           <a class="btn btn-ghost" href="#help">How I help</a>
@@ -442,8 +446,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   <!-- 2. Proof, straight away -->
   <section class="clients" aria-label="Organisations Gary has worked with">
     <div class="wrap">
-      <p class="label">30 years with organisations from $1bn household names to growing SMEs, as partner, consultant or assessor, including</p>
-      <ul><li>Sodexo</li><li>House of Commons</li><li>Virgin.net</li><li>Federation of Master Builders</li><li>Gunning London</li><li>Mostrim Groundworks</li><li>A2Dominion</li><li>Dornan Engineering</li></ul>
+      <p class="label">Construction and built-environment organisations I&rsquo;ve worked with, as partner, consultant or assessor, include</p>
+      <ul><li>Gunning London</li><li>Mostrim Groundworks</li><li>Clarion Response</li><li>Federation of Master Builders</li><li>The Clancy Group</li><li>Dornan Engineering</li><li>Mullaley &amp; Company</li></ul>
     </div>
   </section>
 
@@ -473,14 +477,44 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         <div class="areas">
           <div class="area"><h3>Strategic focus</h3><p>Where the business is going, and the few things that will get it there.</p></div>
           <div class="area"><h3>Commercial grip</h3><p>Decisions grounded in margin, risk and what drives performance.</p></div>
-          <div class="area"><h3>Systems that scale</h3><p>Quality and delivery that don't depend on a few key people.</p></div>
-          <div class="area"><h3>Leaders at every level</h3><p>Managers who own their part, so the owner can lead rather than firefight.</p></div>
+          <div class="area"><h3>Systems that scale</h3><p>Quality, safety and delivery that don't depend on a few key people.</p></div>
+          <div class="area"><h3>Leaders at every level</h3><p>Site managers and supervisors who lead, not just run the programme, so the owner can lead rather than firefight.</p></div>
         </div>
         <div class="xp" id="expertise">
           <div class="sub-h">Specialist expertise I bring</div>
-          <div class="chips"><span>People and culture</span><span>Team dynamics</span><span>Leadership</span><span>Wellbeing</span><span>Practical AI</span><a class="chip-link" href="esg.html">ESG &rarr;</a><a class="chip-link" href="bids.html">Bids &rarr;</a></div>
+          <div class="chips"><span>People and culture</span><span>Team dynamics</span><span>Leadership</span><span>Wellbeing</span><a class="chip-link" href="ai.html">Practical AI &rarr;</a><a class="chip-link" href="esg.html">ESG &rarr;</a><a class="chip-link" href="bids.html">Bids &rarr;</a></div>
           <p>Part of every partnership, and each can also be a starting point on its own.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How construction works -->
+  <section class="section" id="construction" aria-labelledby="con-title" style="border-top:0;padding-top:0">
+    <div class="wrap frame">
+      <header>
+        <div class="eyebrow">Construction</div>
+        <h2 class="h2" id="con-title">I know how construction works.</h2>
+        <p>Growing a construction business means leading people with very different working lives.</p>
+      </header>
+      <div class="body">
+        <div class="areas">
+          <div class="area"><h3>Site and office</h3><p>Two cultures, often pulling different ways. Change has to work in both.</p></div>
+          <div class="area"><h3>A mixed workforce</h3><p>Direct staff, subcontractors and labour-only teams, many first languages, apprentices to forty years on the tools. Reaching everyone takes more than an all-staff email.</p></div>
+          <div class="area"><h3>Relationships carry the business</h3><p>Clients, main contractors, supply chain and long-serving people. Growth puts strain on all of them.</p></div>
+          <div class="area"><h3>Commercial pressure, always</h3><p>Tight margins, tender cycles and programme slippage. Nothing I suggest ignores that.</p></div>
+          <div class="area"><h3>Founder-led firms</h3><p>What made the business succeed often lives in a few people. Growth means sharing it without losing it.</p></div>
+        </div>
+        <div class="radar">
+          <div class="sub-h">Keeping pace with what&rsquo;s changing</div>
+          <ul>
+            <li>The Building Safety Act&rsquo;s focus on competence and accountability, and what it asks of people at every level</li>
+            <li>The Construction Leadership Council&rsquo;s Mental Health Joint Code of Practice</li>
+            <li>Social value and carbon in tenders</li>
+            <li>Practical, safe use of AI</li>
+          </ul>
+        </div>
+        <p class="cred-line">Wellbeing Academy Gold, Lighthouse Construction Industry Charity &middot; Work with the Federation of Master Builders</p>
       </div>
     </div>
   </section>
@@ -500,7 +534,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <div class="fig"><strong>~10,000</strong><span>people interviewed about their working lives</span></div>
         </div>
         <div class="corner-list corner-3">
-          <div><h3>Knowing the road ahead</h3><p>I recognise the stage you're at, what tends to follow, and which problems to solve now.</p></div>
+          <div><h3>Knowing the road ahead</h3><p>From your first big contract to doubling in size, I recognise the stage you're at and what tends to come next.</p></div>
           <div><h3>An honest read of the business</h3><p>Leaders hear what people really think, including what rarely travels upwards.</p></div>
           <div><h3>Current and tested</h3><p>Every week I do this work from the inside, as Fractional Head of People and ESG at Gunning London.</p></div>
           <div><h3>Follow-through</h3><p>What's agreed around the table actually changes on site and in the office.</p></div>
@@ -527,17 +561,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <details class="case-row"><summary><span class="cr-name">Clarion Response</span><span class="cr-pull">Preparing a large workforce for major restructure, right through the pandemic.</span></summary>
             <article class="case"><div class="case-work"><p class="case-meta">Repairs service of Clarion Housing Group · Interim Senior People Lead · 2019–21</p><p>Embedded with the executive team right through the pandemic, preparing the organisation's culture for a major restructure so people could engage with the change rather than resist it.</p><ul class="results"><li>An engagement programme for middle managers, built around workshops</li><li>One-to-one coaching for the Operations Director</li><li>People plans implemented in every region</li></ul></div><figure class="case-q"><p class="case-meta" style="margin:0">The response</p><p class="case-statement">The workshops were highly successful, and middle managers described them as refreshing: a positive way into a difficult period of change.</p></figure></article>
           </details>
-          <details class="case-row"><summary><span class="cr-name">FSP</span><span class="cr-pull">“Of great value to me as CEO… helping develop and challenge our organisation.”<span class="cp-who">Simon Grosse, CEO</span></span></summary>
-            <article class="case"><div class="case-work"><p class="case-meta">Culture and technology adoption · Partner to the CEO for 3+ years</p><p>Exploring how a client's culture shapes the success of a technology implementation, and advising on FSP's own culture and people strategy.</p><ul class="results"><li>A culture diagnostic to gauge how ready clients were for technology change</li><li>Insight that informed the development of a utilisation team</li><li>Guidance on culture and people strategy</li></ul></div><figure class="case-q"><blockquote>Over the last 3 years I have known Gary, I have found him to be deeply knowledgeable and expert in organisational and cultural development, as well as also being very practical and down to earth. Personally, he is approachable, kind and thoughtful. This is a great compliment to the thoughtful and purposeful nature in which he delivers his professional work, as well as coaching others to deliver positive change. He has been of great value to me as CEO over the last 3+ years helping develop and challenge our organisation.</blockquote><figcaption><cite><b>Simon Grosse</b>, CEO, FSP</cite><span class="src">LinkedIn recommendation</span></figcaption></figure></article>
-          </details>
-          <details class="case-row"><summary><span class="cr-name">Sodexo</span><span class="cr-pull">“One of the most credible consultants that I have had the pleasure to work with.”<span class="cp-who">Andy Rogers</span></span></summary>
-            <article class="case"><div class="case-work"><p class="case-meta">Senior advisory work · UK-wide · 2012–2017</p><p>Supporting Sodexo's entire UK people agenda, driving excellence in people management across its sites and challenging thinking at the most senior levels.</p><ul class="results"><li>Diagnosing common strengths and challenges in people practice across every division and region, with reports and recommendations to the executive</li><li>Inspiring regional and segment HR Directors to embrace future challenges</li><li>Advising and challenging at director level</li><li>Training internal values champions</li><li>Supporting significant cultural shifts, multi-skilling and workforce redesign</li></ul></div><figure class="case-q"><blockquote>I worked with Gary from 2012 to 2017 and have to say that he was a tremendous asset in supporting our business. He has huge business intelligence along with an empathetic approach to the issues, he is rigorous but fair and has an ability to articulate challenges in the most subtle of ways to all levels of senior leaders. He is one of the most credible consultants that I have had the pleasure to work with and would not hesitate in recommending him.</blockquote><figcaption><cite><b>Andy Rogers</b>, Sodexo</cite><span class="src">LinkedIn recommendation</span></figcaption></figure></article>
-          </details>
-          <details class="case-row"><summary><span class="cr-name">House of Commons</span><span class="cr-pull">“Gary is excellent and we're lucky to have him.”<span class="cp-who">Sir Robert Rogers</span></span></summary>
-            <article class="case"><div class="case-work"><p class="case-meta">Senior advisory work · Embedded with HR · c. 2010–2015</p><p>Extensive embedded support for the HR team in the immediate and ongoing aftermath of the parliamentary expenses scandal. A highly complex organisation, with many functions and local cultures and a long history of complicating factors, and a delicate, demanding place to work as an agent of change.</p><ul class="results"><li>Repeated cycles of diagnosis, reporting, feedback and recommendations</li><li>Extensive educational work on why workplace culture matters, and on the principles of high performance working</li><li>Advising and challenging senior teams on people practice and organisational development</li><li>Hands-on support for HR professionals through a period of intense scrutiny</li></ul></div><figure class="case-q"><blockquote>Gary is excellent and we're lucky to have him.</blockquote><figcaption><cite><b>Sir Robert Rogers</b> (now Lord Lisvane), Chief Executive, House of Commons</cite><span class="src">LinkedIn recommendation</span></figcaption></figure></article>
-          </details>
       </div>
-      <p class="recs-more"><a href="about.html#recommendations">More recommendations &rarr;</a></p>
+      <p class="recs-more"><a href="about.html#earlier">Earlier work, from Sodexo to the House of Commons, and more recommendations &rarr;</a></p>
     </div>
   </section>
 
@@ -551,7 +576,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         <div class="about-story">
           <div class="eyebrow">About</div>
           <h2 class="h2" id="about-title">Gary Inman</h2>
-          <p>I started in technology in the City, then spent decades advising organisations from Sodexo to the House of Commons. Today I work with growing SMEs, by choice: you work directly with the people who decide, and you see the impact quickly.</p>
+          <p>I work with growing construction businesses, by choice: you work directly with the people who decide, and you see the impact quickly. Before that, I spent decades advising organisations from Sodexo to the House of Commons, after starting out in technology in the City.</p>
           <p>Off the clock I'm a percussionist, with 35 years and more than 1,000 performances behind me. It's taught me a lot about how people learn and change.</p>
           <p><a class="spec-link" href="about.html">Career, qualifications and recommendations</a></p>
         </div>
