@@ -375,6 +375,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .recs-more a:hover{text-decoration:underline}
 @media (max-width:900px){.rq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.rq-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Phone-only folding: extra items hidden behind a "show more" button on small screens */
+.m-toggle{display:none;align-items:center;gap:8px;margin-top:16px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 15px/1.2 var(--body);cursor:pointer}
+.m-toggle::after{content:"\2193";color:var(--brass)}
+.m-fold.open>.m-toggle::after,.m-fold.open .m-toggle::after{content:"\2191"}
+@media (max-width:700px){
+  .m-toggle{display:inline-flex}
+  .m-fold:not(.open) .m-x{display:none}
+  .section{padding-block:52px}
+  .recs{padding-block:48px}
+  .frame{gap:24px}
+  .body{gap:18px}
+}
 </style>
 
 <header class="site-head">
@@ -435,20 +448,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   </section>
 
   <!-- Recommendations -->
-  <section class="recs" id="recommendations" aria-labelledby="recs-title">
+  <section class="recs m-fold" id="recommendations" aria-labelledby="recs-title">
     <div class="wrap">
       <div class="recs-head"><div class="eyebrow">Recommendations</div><h2 class="h2" id="recs-title">What clients say.</h2></div>
       <div class="rq-grid">
         <figure class="rq"><blockquote>His strategic insight is second to none.</blockquote><figcaption><b>Lindsey Tuley</b>Director of People &amp; Culture</figcaption></figure>
         <figure class="rq"><blockquote>One of the most credible consultants that I have had the pleasure to work with.</blockquote><figcaption><b>Andy Rogers</b>Sodexo</figcaption></figure>
         <figure class="rq"><blockquote>Gary is excellent and we're lucky to have him.</blockquote><figcaption><b>Sir Robert Rogers</b>Chief Executive, House of Commons (now Lord Lisvane)</figcaption></figure>
-        <figure class="rq"><blockquote>Of great value to me as CEO… helping develop and challenge our organisation.</blockquote><figcaption><b>Simon Grosse</b>CEO, FSP</figcaption></figure>
-        <figure class="rq"><blockquote>I've particularly valued your perspective, the safe space you've created and having you as such a trusted sounding board.</blockquote><figcaption><b>Donna Sandham</b>Head of OD, A2Dominion</figcaption></figure>
-        <figure class="rq"><blockquote>Balances a pragmatic approach to driving immediate change and progress with a vision for the bigger picture.</blockquote><figcaption><b>Pete Grosse</b>Chief People Officer, FSP</figcaption></figure>
-        <figure class="rq"><blockquote>Very pragmatic and demonstrates value very quickly to his clients.</blockquote><figcaption><b>Helen Edwards</b>Senior Finance Manager</figcaption></figure>
-        <figure class="rq"><blockquote>Clear and concise solutions which have meaningful impacts.</blockquote><figcaption><b>Richard Budd</b>RB Business Insights</figcaption></figure>
-        <figure class="rq"><blockquote>He put this skill set to work in order to achieve the best out of me and our Management Team.</blockquote><figcaption><b>Sabina Begum</b>Mara Services</figcaption></figure>
+        <figure class="rq m-x"><blockquote>Of great value to me as CEO… helping develop and challenge our organisation.</blockquote><figcaption><b>Simon Grosse</b>CEO, FSP</figcaption></figure>
+        <figure class="rq m-x"><blockquote>I've particularly valued your perspective, the safe space you've created and having you as such a trusted sounding board.</blockquote><figcaption><b>Donna Sandham</b>Head of OD, A2Dominion</figcaption></figure>
+        <figure class="rq m-x"><blockquote>Balances a pragmatic approach to driving immediate change and progress with a vision for the bigger picture.</blockquote><figcaption><b>Pete Grosse</b>Chief People Officer, FSP</figcaption></figure>
+        <figure class="rq m-x"><blockquote>Very pragmatic and demonstrates value very quickly to his clients.</blockquote><figcaption><b>Helen Edwards</b>Senior Finance Manager</figcaption></figure>
+        <figure class="rq m-x"><blockquote>Clear and concise solutions which have meaningful impacts.</blockquote><figcaption><b>Richard Budd</b>RB Business Insights</figcaption></figure>
+        <figure class="rq m-x"><blockquote>He put this skill set to work in order to achieve the best out of me and our Management Team.</blockquote><figcaption><b>Sabina Begum</b>Mara Services</figcaption></figure>
       </div>
+      <button type="button" class="m-toggle" data-more="More recommendations" data-less="Fewer recommendations">More recommendations</button>
       <p class="recs-more"><a href="#clients">Full recommendations alongside selected clients and projects &darr;</a></p>
     </div>
   </section>
@@ -593,33 +607,36 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <p>Today I've traded large corporates for growing SMEs, by choice. In a smaller business everything is closer: you work directly with the people who make the decisions, you see the impact quickly, and change lands with people you know by name. That's the work that fires me up most.</p>
         </div>
       </div>
-      <div class="career">
+      <div class="career m-fold">
         <div class="sub-h">Career</div>
         <ol class="ctree">
           <li><div class="crow"><span class="cy">2018&ndash;now</span><span><b>Gary Inman Associates</b>Partner to leaders of growing businesses<span class="cd">Working alongside owners and leadership teams on whatever growth asks of them next: culture and people, team dynamics, leadership capability, practical AI, ESG and bids. Clients include Mostrim Groundworks and the Federation of Master Builders.</span></span></div>
             <ol>
               <li><div class="crow"><span class="cy">2023&ndash;now</span><span><b>Gunning London</b>Fractional Head of People and ESG<span class="cd">Part of the leadership team in a values-driven London construction business. Bids and PQQs that consistently score at or near the maximum; social value introduced and ESG reshaped; Investors in People Gold; mental health support across the business; and bespoke AI tools and routines built into everyday work.</span></span></div></li>
-              <li><div class="crow"><span class="cy">2019&ndash;2021</span><span><b>Clarion Response</b>Interim Senior People Lead, through the pandemic<span class="cd">Embedded with the executive team, preparing the culture for major restructuring: an engagement programme with middle managers, workshops that gave people a new way to see their work, coaching for the Operations Director, and people plans in every region.</span></span></div></li>
+              <li class="m-x"><div class="crow"><span class="cy">2019&ndash;2021</span><span><b>Clarion Response</b>Interim Senior People Lead, through the pandemic<span class="cd">Embedded with the executive team, preparing the culture for major restructuring: an engagement programme with middle managers, workshops that gave people a new way to see their work, coaching for the Operations Director, and people plans in every region.</span></span></div></li>
             </ol>
           </li>
-          <li><div class="crow"><span class="cy">1995&ndash;2018</span><span><b>Inman Consulting</b>Principal Consultant<span class="cd">Advising senior teams in organisations from Virgin.net, Sodexo and the House of Commons to growing SMEs. Through Investors in People, assessed and advised more than 200 organisations and interviewed nearly 10,000 people about their work. At policy level, helped the Estonian government implement a business support model delivered through a pool of registered consultants.</span></span></div>
+          <li class="m-x"><div class="crow"><span class="cy">1995&ndash;2018</span><span><b>Inman Consulting</b>Principal Consultant<span class="cd">Advising senior teams in organisations from Virgin.net, Sodexo and the House of Commons to growing SMEs. Through Investors in People, assessed and advised more than 200 organisations and interviewed nearly 10,000 people about their work. At policy level, helped the Estonian government implement a business support model delivered through a pool of registered consultants.</span></span></div>
             <ol>
               <li><div class="crow"><span class="cy">2004&ndash;2011</span><span><b>6S Consulting</b>Managing Director<span class="cd">Led a progressive management consultancy working with public sector bodies and central government. EU-funded projects included the Sheffield Gateway business framework and an Access to Finance scheme for SMEs, alongside organisational development and team dynamics work.</span></span></div></li>
             </ol>
           </li>
-          <li><div class="crow"><span class="cy">1988</span><span><b>CCF plc</b>Expert systems for six major City brokers<span class="cd">Building expert systems, an early form of AI that captured specialists&rsquo; know-how to support decision-making.</span></span></div></li>
+          <li class="m-x"><div class="crow"><span class="cy">1988</span><span><b>CCF plc</b>Expert systems for six major City brokers<span class="cd">Building expert systems, an early form of AI that captured specialists&rsquo; know-how to support decision-making.</span></span></div></li>
         </ol>
+        <button type="button" class="m-toggle" data-more="See full career" data-less="Show less">See full career</button>
       </div>
       <div class="about-bottom">
-        <div class="quals-box">
+        <div class="quals-box m-fold">
           <div class="sub-h">Qualifications</div>
-          <div class="chips"><span>BSc (Hons) Psychology</span><span>Certified Management Consultant (CMC)</span><span>Licensed Investors in People Practitioner</span><span>Diploma in Performance Coaching for Business</span><span>Advanced Action Learning Facilitator</span><span>Belbin Team Roles Practitioner</span><span>Human Synergistics culture tools</span><span>Certificate in Mental Health First Aid</span><span>Certificate in Mental Health Advocacy</span><span>Wellbeing Academy Gold, Lighthouse Construction Industry Charity</span><span>Certified Carbon Literate</span></div>
+          <div class="chips m-x"><span>BSc (Hons) Psychology</span><span>Certified Management Consultant (CMC)</span><span>Licensed Investors in People Practitioner</span><span>Diploma in Performance Coaching for Business</span><span>Advanced Action Learning Facilitator</span><span>Belbin Team Roles Practitioner</span><span>Human Synergistics culture tools</span><span>Certificate in Mental Health First Aid</span><span>Certificate in Mental Health Advocacy</span><span>Wellbeing Academy Gold, Lighthouse Construction Industry Charity</span><span>Certified Carbon Literate</span></div>
+          <button type="button" class="m-toggle" data-more="Show qualifications" data-less="Hide qualifications">Show qualifications</button>
         </div>
-        <div class="thread">
+        <div class="thread m-fold">
           <div class="eyebrow">Off the clock</div>
           <h3>A lifelong learner, and a musician.</h3>
-          <p>I've been a percussionist for 35 years, with more than 1,000 performances and a record deal behind me. I've studied under Glen Velez and Yshai Afterman, learned bougarabou with Boubacar Diedhiou, and trained with the World Percussion Academy. I've also studied sound healing and sound therapy from a scientific perspective. I'm now collaborating with a Spanish PhD researcher on what triggers learning in music, in particular what happens when an expected pattern is broken.</p>
-          <p>It informs my intimate understanding of learning and growth, and how I design change so that it lands.</p>
+          <p class="m-x">I've been a percussionist for 35 years, with more than 1,000 performances and a record deal behind me. I've studied under Glen Velez and Yshai Afterman, learned bougarabou with Boubacar Diedhiou, and trained with the World Percussion Academy. I've also studied sound healing and sound therapy from a scientific perspective. I'm now collaborating with a Spanish PhD researcher on what triggers learning in music, in particular what happens when an expected pattern is broken.</p>
+          <p class="m-x">It informs my intimate understanding of learning and growth, and how I design change so that it lands.</p>
+          <button type="button" class="m-toggle" data-more="Read more" data-less="Read less">Read more</button>
         </div>
       </div>
     </div>
@@ -660,6 +677,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       b.style.height=Math.max(3,Math.round(pattern[(i+k*7)%pattern.length]*fade*1.15))+'px';
       b.style.animationDelay=(i*0.012)+'s';el.appendChild(b);
     }
+  });
+  document.querySelectorAll('.m-toggle').forEach(function(b){
+    b.setAttribute('aria-expanded','false');
+    b.addEventListener('click',function(){
+      var f=b.closest('.m-fold');var open=f.classList.toggle('open');
+      b.setAttribute('aria-expanded',open?'true':'false');
+      b.textContent=open?b.dataset.less:b.dataset.more;
+    });
   });
   var btn=document.getElementById('copyEmail');
   btn.addEventListener('click',function(){
