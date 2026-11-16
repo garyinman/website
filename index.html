@@ -179,6 +179,11 @@ a{color:inherit}
 .skills p{color:var(--muted);max-width:56ch}
 .xp{display:flex;flex-direction:column;gap:14px;margin-top:8px;padding-top:4px}
 .xp p{color:var(--muted);font-size:16px;margin:0;padding:0}
+.con-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.con-grid div{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--brass);border-radius:8px;padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+.con-grid h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+.con-grid p{color:var(--muted);font-size:15.5px;margin:0}
+@media (max-width:600px){.con-grid{grid-template-columns:minmax(0,1fr);gap:10px}.con-grid div{padding:14px 16px;gap:4px}.con-grid h3{font-size:17.5px}.con-grid p{font-size:15px}.radar{padding:16px 18px}.radar ul{gap:6px;font-size:15px}}
 .radar{display:flex;flex-direction:column;gap:12px;margin-top:8px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
 .radar ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;color:var(--muted)}
 .cred-line{font-size:14.5px;color:var(--muted);margin:0}
@@ -496,20 +501,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <header>
         <div class="eyebrow">Construction</div>
         <h2 class="h2" id="con-title">I know how construction works.</h2>
-        <p>Growing a construction business means leading people with very different working lives.</p>
+        <p>Growing a construction business means leading people with very different working lives, under constant commercial pressure.</p>
       </header>
       <div class="body">
-        <div class="areas">
-          <div class="area"><h3>Site and office</h3><p>Two cultures, often pulling different ways. Change has to work in both.</p></div>
-          <div class="area"><h3>A mixed workforce</h3><p>Direct staff, subcontractors and labour-only teams, many first languages, apprentices to forty years on the tools. Reaching everyone takes more than an all-staff email.</p></div>
-          <div class="area"><h3>Relationships carry the business</h3><p>Clients, main contractors, supply chain and long-serving people. Growth puts strain on all of them.</p></div>
-          <div class="area"><h3>Commercial pressure, always</h3><p>Tight margins, tender cycles and programme slippage. Nothing I suggest ignores that.</p></div>
-          <div class="area"><h3>Founder-led firms</h3><p>What made the business succeed often lives in a few people. Growth means sharing it without losing it.</p></div>
+        <div class="con-grid">
+          <div><h3>Site and office</h3><p>Two cultures, often pulling different ways. Change has to work in both.</p></div>
+          <div><h3>A mixed workforce</h3><p>Direct staff, subcontractors and labour-only teams, many first languages, apprentices to forty years on the tools.</p></div>
+          <div><h3>Relationships carry the business</h3><p>Clients, main contractors, supply chain and long-serving people. Growth strains all of them.</p></div>
+          <div><h3>Founder-led firms</h3><p>What made the business succeed often lives in a few people. Growth means sharing it without losing it.</p></div>
         </div>
         <div class="radar">
           <div class="sub-h">Keeping pace with what&rsquo;s changing</div>
           <ul>
-            <li>The Building Safety Act&rsquo;s focus on competence and accountability, and what it asks of people at every level</li>
+            <li>The Building Safety Act&rsquo;s focus on competence and accountability, and what it asks of people</li>
             <li>The Construction Leadership Council&rsquo;s Mental Health Joint Code of Practice</li>
             <li>Social value and carbon in tenders</li>
             <li>Practical, safe use of AI</li>
