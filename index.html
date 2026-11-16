@@ -216,7 +216,7 @@ a{color:inherit}
 .fig{display:flex;flex-direction:column;gap:6px;padding-top:18px;border-top:2px solid var(--ink)}
 .fig strong{font-family:var(--display);font-size:clamp(36px,4.4vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
 .fig span{font-size:15px;color:var(--muted);max-width:24ch}
-@media (max-width:760px){.figures{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.figures{gap:14px}.fig strong{font-size:30px}.fig span{font-size:13px}}
 .reasons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 56px}
 .reason{display:flex;flex-direction:column;gap:10px}
 .reason h3{font-size:24px;font-weight:600;letter-spacing:-.015em}
@@ -399,10 +399,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   <div class="wrap">
     <a class="mark" href="#top" aria-label="Gary Inman, back to top"><i aria-hidden="true"><b style="height:40%"></b><b style="height:100%"></b><b style="height:65%"></b></i>Gary Inman</a>
     <nav class="nav" aria-label="Main">
-      <a href="#partnership">Working in partnership</a>
-      <a href="#expertise">Specialist themes</a>
+      <a href="#help">How I help</a>
       <a href="#clients">Clients</a>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
       <a class="pill" href="bids.html">Bids</a>
       <a class="pill" href="esg.html">ESG</a>
       <a class="btn btn-ink" href="#contact">Let's talk</a>
@@ -417,19 +416,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <div>
         <div class="eyebrow">A partner to leaders in growing businesses</div>
         <h1 id="hero-title">Sharp thinking.<br><em>Practical, human change.</em></h1>
-        <p class="lede">Growth changes what a business needs from its leaders. I help owners and their teams see what comes next, make good decisions, and turn them into changes that stick.</p>
+        <p class="lede">Growth changes what a business needs from its leaders. I help owners and their teams see what comes next, decide well, and make change stick.</p>
         <div class="cta">
           <a class="btn btn-gold" href="#contact">Start with a conversation</a>
-          <a class="btn btn-ghost" href="#partnership">How I help</a>
+          <a class="btn btn-ghost" href="#help">How I help</a>
         </div>
       </div>
     </div>
     <div class="pulse" data-pulse aria-hidden="true"></div>
   </section>
 
+  <!-- 2. Proof, straight away -->
   <section class="clients" aria-label="Organisations Gary has worked with">
     <div class="wrap">
-      <p class="label">Three decades with organisations from $1bn household names to growing SMEs, as partner, consultant or assessor, including</p>
+      <p class="label">30 years with organisations from $1bn household names to growing SMEs, as partner, consultant or assessor, including</p>
       <ul><li>Virgin.net</li><li>Sodexo</li><li>House of Commons</li><li>Trafalgar House Pensions</li><li>Federation of Master Builders</li><li>Gunning London</li><li>Mostrim Groundworks</li><li>A2Dominion</li><li>The Clancy Group</li><li>Dornan Engineering</li><li>The Hazel Project</li><li>Mara Services</li><li>Mullaley &amp; Company</li></ul>
     </div>
   </section>
@@ -443,141 +443,73 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     </div>
   </section>
 
-  <!-- 2. At a glance: how the offer fits together -->
-  <section class="glance" aria-label="How it fits together">
-    <div class="wrap">
-      <a class="g" href="#partnership"><span class="g-n">At the heart</span><b>Working in partnership</b><span>Working alongside you and your leadership team, for as long as it helps.</span></a>
-      <a class="g" href="#expertise"><span class="g-n">Or start with</span><b>A specific theme</b><span>From culture and leadership to AI, ESG and bids, each a way in on its own.</span></a>
-      <a class="g" href="bids.html"><span class="g-n">Also available stand-alone</span><b>Bids and ESG</b><span>Full bid writing, and ESG management, development and review.</span></a>
-    </div>
-  </section>
-
-  <!-- Recommendations -->
-  <section class="recs m-fold" id="recommendations" aria-labelledby="recs-title">
-    <div class="wrap">
-      <div class="recs-head"><div class="eyebrow">Recommendations</div><h2 class="h2" id="recs-title">What clients say.</h2></div>
-      <div class="rq-grid">
-        <figure class="rq"><blockquote>His strategic insight is second to none.</blockquote><figcaption><b>Lindsey Tuley</b>Director of People &amp; Culture</figcaption></figure>
-        <figure class="rq"><blockquote>One of the most credible consultants that I have had the pleasure to work with.</blockquote><figcaption><b>Andy Rogers</b>Sodexo</figcaption></figure>
-        <figure class="rq"><blockquote>Gary is excellent and we're lucky to have him.</blockquote><figcaption><b>Sir Robert Rogers</b>Chief Executive, House of Commons (now Lord Lisvane)</figcaption></figure>
-        <figure class="rq m-x"><blockquote>Of great value to me as CEO… helping develop and challenge our organisation.</blockquote><figcaption><b>Simon Grosse</b>CEO, FSP</figcaption></figure>
-        <figure class="rq m-x"><blockquote>I've particularly valued your perspective, the safe space you've created and having you as such a trusted sounding board.</blockquote><figcaption><b>Donna Sandham</b>Head of OD, A2Dominion</figcaption></figure>
-        <figure class="rq m-x"><blockquote>Balances a pragmatic approach to driving immediate change and progress with a vision for the bigger picture.</blockquote><figcaption><b>Pete Grosse</b>Chief People Officer, FSP</figcaption></figure>
-        <figure class="rq m-x"><blockquote>Very pragmatic and demonstrates value very quickly to his clients.</blockquote><figcaption><b>Helen Edwards</b>Senior Finance Manager</figcaption></figure>
-        <figure class="rq m-x"><blockquote>Clear and concise solutions which have meaningful impacts.</blockquote><figcaption><b>Richard Budd</b>RB Business Insights</figcaption></figure>
-        <figure class="rq m-x"><blockquote>He put this skill set to work in order to achieve the best out of me and our Management Team.</blockquote><figcaption><b>Sabina Begum</b>Mara Services</figcaption></figure>
-      </div>
-      <button type="button" class="m-toggle" data-more="More recommendations" data-less="Fewer recommendations">More recommendations</button>
-      <p class="recs-more"><a href="#clients">Full recommendations alongside selected clients and projects &darr;</a></p>
-    </div>
-  </section>
-
-  <!-- 3. The partnership -->
-  <section class="section" id="partnership" aria-labelledby="partnership-title">
+  <!-- 3. How I help: the partnership and the themes in one place -->
+  <section class="section" id="help" aria-labelledby="help-title">
     <div class="wrap frame">
       <header>
-        <div class="eyebrow">Working in partnership</div>
-        <h2 class="h2" id="partnership-title">Alongside the people who lead the business.</h2>
-        <p class="m-long">Part sounding board, part strategist, part hands-on support. I work alongside owners and leadership teams to strengthen how the business is led and run.</p>
-        <p class="m-short">Part sounding board, part strategist, part hands-on support for the people who lead the business.</p>
+        <div class="eyebrow">How I help</div>
+        <h2 class="h2" id="help-title">Alongside the people who lead the business.</h2>
+        <p>Part sounding board, part strategist, part hands-on support.</p>
         <div class="shape">
           <h3>Shaped around you</h3>
-          <p class="m-long">It works best as an ongoing relationship, but there's no fixed formula. It might be regular one-to-one time, working alongside your team, hands-on support through a particular change, or a mix that shifts as the business grows. It can also be a fixed-term assignment with a clear end, such as an interim people lead or leading a change programme.</p>
-        <p class="m-short">It works best as an ongoing relationship, shaped around what the business needs. It can also be a fixed-term assignment.</p>
+          <p>An ongoing relationship works best, but there's no fixed formula. It might be one-to-one time, working alongside your team, or a fixed-term assignment with a clear end.</p>
         </div>
       </header>
       <div class="body">
         <div class="sub-h">What we work on</div>
-        <div class="areas m-fold">
-          <div class="area"><h3>Strategic focus</h3><p>Clarity on where the business is going, and the few things that will really get it there.</p></div>
-          <div class="area"><h3>Commercial grip</h3><p>Decisions grounded in margin, risk and what actually drives performance.</p></div>
-          <div class="area"><h3>Systems and consistency</h3><p>Ways of working that scale, so quality and delivery don't depend on a few key people.</p></div>
-          <div class="m-x area"><h3>A high-performance culture</h3><p>People who know what good looks like, take ownership, and want to stay and grow.</p></div>
-          <div class="m-x area"><h3>Leadership that grows with the business</h3><p>Middle managers fully empowered to lead, with real ownership and accountability, so the owner has room to lead rather than firefight.</p></div>
-          <button type="button" class="m-toggle" data-more="Show all" data-less="Show fewer">Show all</button>
+        <div class="areas">
+          <div class="area"><h3>Strategic focus</h3><p>Where the business is going, and the few things that will get it there.</p></div>
+          <div class="area"><h3>Commercial grip</h3><p>Decisions grounded in margin, risk and what drives performance.</p></div>
+          <div class="area"><h3>Systems that scale</h3><p>Quality and delivery that don't depend on a few key people.</p></div>
+          <div class="area"><h3>Leaders at every level</h3><p>Managers who own their part, so the owner can lead rather than firefight.</p></div>
+        </div>
+        <div class="sub-h" id="expertise" style="margin-top:12px">Specialist themes, together or on their own</div>
+        <div class="themes">
+          <details class="theme"><summary><span class="t-title">People and culture</span><span class="t-line">Attract, develop and keep good people.</span></summary><div class="t-body"><ul><li>Define and measure your culture</li><li>Achieve Investors in People accreditation, with one of the UK's most experienced practitioners</li><li>Handle difficult conversations and challenging people issues with confidence</li><li>Unlock the talent you already have</li></ul><p class="cred">Three decades designing and leading people practice, and a great many organisations helped to Investors in People, from the core award through to Platinum.</p></div></details>
+          <details class="theme"><summary><span class="t-title">Team dynamics</span><span class="t-line">Teams that use each other's strengths.</span></summary><div class="t-body"><ul><li>Belbin team profiles for individuals and leadership teams</li><li>Action learning that makes practical, commercial sense for an SME</li><li>Culture and team diagnostics that surface friction early</li></ul><p class="cred">Belbin Team Roles Practitioner and Advanced Action Learning Facilitator, trained in Human Synergistics culture tools.</p></div></details>
+          <details class="theme"><summary><span class="t-title">Leadership development</span><span class="t-line">Grow the leaders the business needs next.</span></summary><div class="t-body"><ul><li>One-to-one coaching for owners, directors and managers</li><li>Leadership capability and strategic thinking in your managers</li><li>Middle managers with real ownership and accountability</li></ul><p class="cred">Diploma in Performance Coaching for Business, and a qualified counsellor. Practical, grounded in real-world experience rather than academic theory.</p></div></details>
+          <details class="theme"><summary><span class="t-title">Wellbeing at work</span><span class="t-line">Look after people and performance.</span></summary><div class="t-body"><ul><li>A wellbeing approach that fits your business, using the Investors in People framework or other models</li><li>Mental health support across the business, including first aiders and champions</li><li>Wellbeing that supports retention, attendance and performance</li></ul><p class="cred">Mental Health First Aider and Champion and a qualified counsellor, with long experience of wellbeing work, including with some of the best in their sectors.</p></div></details>
+          <details class="theme"><summary><span class="t-title">Practical AI adoption</span><span class="t-line">AI that saves time and adds value, safely.</span></summary><div class="t-body"><ul><li>Find where AI can genuinely save time and add value</li><li>Bespoke tools and automated routines, built around how you work</li><li>Bring your people with you, with training, guidance and safe use</li><li>Good practice and governance, including AI in bids</li></ul><p class="cred">Working where people and technology meet since 1988, from early expert systems in the City to building practical AI tools today.</p></div></details>
+          <details class="theme"><summary><span class="t-title">ESG and social value</span><span class="t-line">Achievable, and a strength when you bid.</span></summary><div class="t-body"><ul><li>Carbon tracking and carbon reduction plans</li><li>Social value commitments you can deliver and report on</li><li>ESG management, development and review</li></ul><p class="cred">Certified Carbon Literate, with hands-on experience of building carbon tracking and social value practice from scratch.</p><a class="spec-link" href="esg.html">More about ESG</a></div></details>
+          <details class="theme"><summary><span class="t-title">Bids and tenders</span><span class="t-line">Win work, and use each tender to raise standards.</span></summary><div class="t-body"><ul><li>Full bid writing, from first read to final submission</li><li>Reviews that strengthen a draft before it goes in</li><li>Coaching, training and content libraries for your own team</li><li>Turning what tenders require into a practical improvement agenda</li></ul><p class="cred">Bids and PQQs that consistently score at or near the maximum on quality, in line with government guidance on AI in procurement (PPN 02/24).</p><a class="spec-link" href="bids.html">More about bids and tenders</a></div></details>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. The person at the top -->
+  <!-- 4. In your corner -->
   <section class="stage corner" id="corner" aria-labelledby="corner-title">
     <div class="wrap frame">
       <header>
-        <div class="eyebrow">For owners, directors and leadership teams</div>
+        <div class="eyebrow">In your corner</div>
         <h2 class="h2" id="corner-title">A perspective you can't get from inside.</h2>
-        <p class="m-long">Whether it's one owner or a board of directors, the hardest things to see are the ones you're closest to. Working with so many other businesses gives me a reference point few leadership teams have.</p>
-        <p class="m-short">The hardest things to see are the ones you're closest to. Working with so many businesses gives me a reference point few leadership teams have.</p>
+        <p>The hardest things to see are the ones you're closest to. Few leadership teams have this many reference points.</p>
       </header>
       <div class="body">
-        <div class="m-fold"><div class="corner-list corner-3">
-          <div><h3>Knowing the road ahead</h3><p>Having worked with organisations at every stage of growth, I recognise the stage you're at, what tends to follow, and which problems are worth solving now.</p></div>
-          <div><h3>An honest read of the business</h3><p>I spend time with people at every level, so leaders hear what the organisation really thinks, including the things that rarely travel upwards on their own.</p></div>
-          <div><h3>Alignment at the top</h3><p>Clearer roles, disagreement surfaced early, and an agreed sense of who decides what, as the business outgrows the way it was first run.</p></div>
-          <div class="m-x"><h3>Follow-through</h3><p>Holding the thread between meetings, so what's agreed around the table actually changes on site and in the office.</p></div>
-        </div>
-        <button type="button" class="m-toggle" data-more="Show all" data-less="Show fewer">Show all</button>
+        <div class="corner-list corner-3">
+          <div><h3>Knowing the road ahead</h3><p>I recognise the stage you're at, what tends to follow, and which problems to solve now.</p></div>
+          <div><h3>An honest read of the business</h3><p>Leaders hear what people really think, including what rarely travels upwards.</p></div>
+          <div><h3>Current and tested</h3><p>Every week I do this work from the inside, as Fractional Head of People and ESG at Gunning London.</p></div>
+          <div><h3>Follow-through</h3><p>What's agreed around the table actually changes on site and in the office.</p></div>
         </div>
       </div>
     </div>
     <div class="pulse" data-pulse aria-hidden="true"></div>
   </section>
 
-  <!-- 5. Specialist expertise, and what's available on its own -->
-  <section class="section" id="expertise" aria-labelledby="exp-title" style="border-top:0">
-    <div class="wrap frame">
-      <header>
-        <div class="eyebrow">Specialist themes</div>
-        <h2 class="h2" id="exp-title">The whole partnership, or a specific theme.</h2>
-        <p class="m-long">These themes run through every partnership. Each can also be a starting point in its own right, and focused work on one often opens up wider change. How I contribute depends on what helps most: doing the work, coaching or training your people, or building the capability in-house.</p>
-        <p class="m-short">These run through every partnership, and each can also be a starting point on its own.</p>
-      </header>
-      <div class="body">
-        <div class="themes">
-          <details class="theme"><summary><span class="t-title">People and culture</span><span class="t-line">Practices that attract, develop and keep good people.</span></summary><div class="t-body"><ul><li>Define and measure your culture</li><li>Achieve Investors in People accreditation, with one of the UK's most experienced practitioners</li><li>Handle difficult conversations and challenging people issues with confidence</li><li>Unlock the talent you already have</li></ul><p class="cred">Three decades designing and leading people practice. I've helped a great many organisations achieve Investors in People, from the core award through to Platinum.</p></div></details>
-          <details class="theme"><summary><span class="t-title">Team dynamics</span><span class="t-line">Help teams understand and use each other's strengths.</span></summary><div class="t-body"><ul><li>Belbin team profiles for individuals and leadership teams</li><li>Action learning that makes practical, commercial sense for an SME</li><li>Culture and team diagnostics that surface friction early</li></ul><p class="cred">Belbin Team Roles Practitioner and Advanced Action Learning Facilitator, trained in Human Synergistics culture tools.</p></div></details>
-          <details class="theme"><summary><span class="t-title">Leadership development</span><span class="t-line">Grow the leaders the business needs next.</span></summary><div class="t-body"><ul><li>One-to-one coaching for owners, directors and managers</li><li>Develop leadership capability and strategic thinking in your managers</li><li>Empower middle managers with real ownership and accountability</li></ul><p class="cred">Qualified business coach and counsellor. Practical and accessible, grounded in real-world experience instead of academic theory, and strong on proven tools, workable solutions and genuine insight.</p></div></details>
-          <details class="theme"><summary><span class="t-title">Wellbeing at work</span><span class="t-line">Practical support that looks after people and performance.</span></summary><div class="t-body"><ul><li>A wellbeing approach that fits your business, using the Investors in People wellbeing framework or other models</li><li>Mental health support across the business, including first aiders and champions</li><li>Wellbeing that supports retention, attendance and performance</li></ul><p class="cred">Mental Health First Aider and Champion and a qualified counsellor, with long experience of wellbeing work across many organisations, including some of the best in their sectors.</p></div></details>
-          <details class="theme"><summary><span class="t-title">Practical AI adoption</span><span class="t-line">Safe, sensible use of AI that saves time and adds value.</span></summary><div class="t-body"><ul><li>Find where AI can genuinely save time and add value in your business</li><li>Bespoke tools and automated routines, built around how you work</li><li>Bring your people with you, with training, guidance and safe use</li><li>Good practice and governance, including AI in bids</li></ul><p class="cred">Working where people and technology meet since 1988, from early expert systems in the City to designing and building practical AI tools today.</p></div></details>
-          <details class="theme"><summary><span class="t-title">ESG and social value</span><span class="t-line">Proportionate, achievable, and a strength when you bid.</span></summary><div class="t-body"><ul><li>Carbon tracking and carbon reduction plans</li><li>Social value commitments you can deliver and report on</li><li>ESG management, development and review</li></ul><p class="cred">Certified Carbon Literate, with hands-on experience of building carbon tracking and social value practice from scratch.</p><a class="spec-link" href="esg.html">More about ESG</a></div></details>
-          <details class="theme"><summary><span class="t-title">Bids and tenders</span><span class="t-line">Winning work, and using each tender to raise standards.</span></summary><div class="t-body"><ul><li>Full bid writing, from first read to final submission</li><li>Reviews that strengthen a draft before it goes in</li><li>Coaching, training and content libraries for your own team</li><li>Turning what tenders require into a practical improvement agenda, from new accreditations to better working practices</li></ul><p class="cred">Writing and leading bids and PQQs that consistently score at or near the maximum on quality, in line with government guidance on AI use in procurement (PPN 02/24). Award-winning report writer, with a very high success rate on award applications for clients.</p><a class="spec-link" href="bids.html">More about bid and tender support</a></div></details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. Why it works -->
-  <section class="section" id="why" aria-labelledby="why-title" style="border-top:0">
+  <!-- 5. Work in practice -->
+  <section class="section" id="clients" aria-labelledby="clients-title" style="border-top:0">
     <div class="wrap">
-      <div class="recog-head" style="margin-bottom:48px">
-        <div class="eyebrow">Why it works</div>
-        <h2 class="h2" id="why-title">Broad, deep, and tested every week.</h2>
+      <div class="recog-head" style="margin-bottom:36px">
+        <div class="eyebrow">Work in practice</div>
+        <h2 class="h2" id="clients-title">Results, in clients' own words.</h2>
       </div>
-      <div class="figures">
+      <div class="figures" style="margin-bottom:36px">
         <div class="fig"><strong>30</strong><span>years helping businesses grow and perform</span></div>
         <div class="fig"><strong>200+</strong><span>organisations' people practices reviewed</span></div>
         <div class="fig"><strong>~10,000</strong><span>people interviewed about their working lives</span></div>
-        
       </div>
-      <div class="reasons m-fold">
-        <div class="reason"><h3>Inside the team</h3><p>Since 2023 I've been Fractional Head of People and ESG at Gunning London, doing the work every week, from people strategy to building the AI tools the business now uses. What I bring is current and tested.</p></div>
-        <div class="reason"><h3>The whole picture in view</h3><p>Commercial, people, systems, ESG, AI and bids, held together at once, so fixing one thing doesn't create a problem somewhere else.</p></div>
-        <div class="m-x reason"><h3>A rare vantage point</h3><p>Seeing so many organisations up close, at every level, has shown me what really separates the businesses that thrive.</p></div>
-        <div class="m-x reason"><h3>Relationships first</h3><p>I build strong, personal relationships right across a business. I support and enable rather than tell, so people come with the change and it lasts.</p></div>
-        <button type="button" class="m-toggle" data-more="More reasons" data-less="Fewer">More reasons</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Work in practice, with clients' own recommendations -->
-  <section class="section" id="clients" aria-labelledby="clients-title">
-    <div class="wrap">
-      <div class="recog-head" style="margin-bottom:48px">
-        <div class="eyebrow">Work in practice</div>
-        <h2 class="h2" id="clients-title">Selected clients and projects.</h2>
-      </div>
-      
-        <div class="case-list">
+      <div class="case-list">
           <details class="case-row"><summary><span class="cr-name">Gunning London</span><span class="cr-pull">Top-scoring bids, Investors in People Gold, and social value rated Very Good.</span></summary>
             <article class="case"><div class="case-work"><p class="case-meta">Construction · London · Fractional Head of People and ESG since 2023</p><p>Embedded with the leadership team across people and culture, ESG, social value and bids, helping a values-driven business build on its success.</p><ul class="results"><li>Bids and PQQs consistently scoring at or near the maximum on quality</li><li>Social value introduced, rated Very Good by NetPositive</li><li>Investors in People Gold in 2026, and a case study on trust in an Investors in People white paper</li><li>Mental health support across the whole business</li><li>A carbon tracking model a small business can actually use</li><li>Bespoke AI apps and advanced routines, several of which I wrote and implemented myself</li></ul></div><figure class="case-q"><blockquote>When Gary joined us in 2023, I thought we were getting help with people and ESG. What we actually got was someone who has become an integral part of how we run the business, and of why it has stepped up a level.<br><br>Gary has built strong, personal, human relationships with people right across the business, at every level, and that trust is what makes everything else work.<br><br>He brings real commercial and business acumen, and a rare ability to keep all the moving parts of a complex picture in view at once. He challenges us, asks the questions we hadn't thought to ask, and stretches our thinking well beyond his brief. But he never tells, never undermines and never embarrasses anyone. He works alongside people, supportive and enabling, with a genuine humility that means change sticks.<br><br>Gary has been a key ingredient in unlocking the team we have now, and the culture around it. If you lead a growing business and want someone who will help make it better and be firmly on your side while they do it, talk to Gary.</blockquote><figcaption><cite><b>Tom Gunning</b>, Director, Gunning London</cite><span class="src">LinkedIn recommendation</span></figcaption></figure></article>
           </details>
@@ -599,57 +531,24 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <details class="case-row"><summary><span class="cr-name">Dornan Engineering</span><span class="cr-pull">Taking an Investors in People Gold employer towards Wellbeing Platinum.</span></summary>
             <article class="case"><div class="case-work"><p class="case-meta">Engineering · Investors in People Gold</p><p>Exploring every one of Dornan's highly advanced people practices in depth, and shaping an active action plan towards Investors in People Wellbeing Platinum, building on their existing Gold accreditation.</p></div></article>
           </details>
-        </div>
+      </div>
+      <p class="recs-more"><a href="about.html#recommendations">More recommendations &rarr;</a></p>
     </div>
   </section>
 
-  <!-- 9. Who Gary is -->
+  <!-- 6. About, short -->
   <section class="section about" id="about" aria-labelledby="about-title">
     <div class="wrap">
-      <div class="about-head">
-        <div class="eyebrow">About</div>
-        <h2 class="h2" id="about-title">Gary Inman</h2>
-      </div>
       <div class="about-top">
         <div class="about-id">
           <img class="about-headshot" src="img/gary-headshot.jpg" alt="Gary Inman, smiling, in a dark jacket" width="1000" height="1000" loading="lazy">
         </div>
         <div class="about-story">
-          <p>I started in technology in the City, then built a consultancy practice working with organisations from Sodexo to the House of Commons. Today I work alongside the leaders of growing businesses, and I'm also Fractional Head of People and ESG in a London construction firm.</p>
-          <p>Most of my work has been hands-on, alongside the people doing it. I've learned that the sceptics matter as much as the enthusiasts, and that real change means bringing both with you.</p>
-          <p>Today I've traded large corporates for growing SMEs, by choice. In a smaller business everything is closer: you work directly with the people who make the decisions, you see the impact quickly, and change lands with people you know by name. That's the work that fires me up most.</p>
-        </div>
-      </div>
-      <div class="career m-fold">
-        <div class="sub-h">Career</div>
-        <ol class="ctree">
-          <li><div class="crow"><span class="cy">2018&ndash;now</span><span><b>Gary Inman Associates</b>Partner to leaders of growing businesses<span class="cd">Working alongside owners and leadership teams on whatever growth asks of them next: culture and people, team dynamics, leadership capability, practical AI, ESG and bids. Clients include Mostrim Groundworks and the Federation of Master Builders.</span></span></div>
-            <ol>
-              <li><div class="crow"><span class="cy">2023&ndash;now</span><span><b>Gunning London</b>Fractional Head of People and ESG<span class="cd">Part of the leadership team in a values-driven London construction business. Bids and PQQs that consistently score at or near the maximum; social value introduced and ESG reshaped; Investors in People Gold; mental health support across the business; and bespoke AI tools and routines built into everyday work.</span></span></div></li>
-              <li class="m-x"><div class="crow"><span class="cy">2019&ndash;2021</span><span><b>Clarion Response</b>Interim Senior People Lead, through the pandemic<span class="cd">Embedded with the executive team, preparing the culture for major restructuring: an engagement programme with middle managers, workshops that gave people a new way to see their work, coaching for the Operations Director, and people plans in every region.</span></span></div></li>
-            </ol>
-          </li>
-          <li class="m-x"><div class="crow"><span class="cy">1995&ndash;2018</span><span><b>Inman Consulting</b>Principal Consultant<span class="cd">Advising senior teams in organisations from Virgin.net, Sodexo and the House of Commons to growing SMEs. Through Investors in People, assessed and advised more than 200 organisations and interviewed nearly 10,000 people about their work. At policy level, helped the Estonian government implement a business support model delivered through a pool of registered consultants.</span></span></div>
-            <ol>
-              <li><div class="crow"><span class="cy">2004&ndash;2011</span><span><b>6S Consulting</b>Managing Director<span class="cd">Led a progressive management consultancy working with public sector bodies and central government. EU-funded projects included the Sheffield Gateway business framework and an Access to Finance scheme for SMEs, alongside organisational development and team dynamics work.</span></span></div></li>
-            </ol>
-          </li>
-          <li class="m-x"><div class="crow"><span class="cy">1988</span><span><b>CCF plc</b>Expert systems for six major City brokers<span class="cd">Building expert systems, an early form of AI that captured specialists&rsquo; know-how to support decision-making.</span></span></div></li>
-        </ol>
-        <button type="button" class="m-toggle" data-more="See full career" data-less="Show less">See full career</button>
-      </div>
-      <div class="about-bottom">
-        <div class="quals-box m-fold">
-          <div class="sub-h">Qualifications</div>
-          <div class="chips m-x"><span>BSc (Hons) Psychology</span><span>Certified Management Consultant (CMC)</span><span>Licensed Investors in People Practitioner</span><span>Diploma in Performance Coaching for Business</span><span>Advanced Action Learning Facilitator</span><span>Belbin Team Roles Practitioner</span><span>Human Synergistics culture tools</span><span>Certificate in Mental Health First Aid</span><span>Certificate in Mental Health Advocacy</span><span>Wellbeing Academy Gold, Lighthouse Construction Industry Charity</span><span>Certified Carbon Literate</span></div>
-          <button type="button" class="m-toggle" data-more="Show qualifications" data-less="Hide qualifications">Show qualifications</button>
-        </div>
-        <div class="thread m-fold">
-          <div class="eyebrow">Off the clock</div>
-          <h3>A lifelong learner, and a musician.</h3>
-          <p class="m-x">I've been a percussionist for 35 years, with more than 1,000 performances and a record deal behind me. I've studied under Glen Velez and Yshai Afterman, learned bougarabou with Boubacar Diedhiou, and trained with the World Percussion Academy. I've also studied sound healing and sound therapy from a scientific perspective. I'm now collaborating with a Spanish PhD researcher on what triggers learning in music, in particular what happens when an expected pattern is broken.</p>
-          <p class="m-x">It informs my intimate understanding of learning and growth, and how I design change so that it lands.</p>
-          <button type="button" class="m-toggle" data-more="Read more" data-less="Read less">Read more</button>
+          <div class="eyebrow">About</div>
+          <h2 class="h2" id="about-title">Gary Inman</h2>
+          <p>I started in technology in the City, then spent decades advising organisations from Sodexo to the House of Commons. Today I work with growing SMEs, by choice: you work directly with the people who decide, and you see the impact quickly.</p>
+          <p>Off the clock I'm a percussionist, with 35 years and more than 1,000 performances behind me. It's taught me a lot about how people learn and change.</p>
+          <p><a class="spec-link" href="about.html">Career, qualifications and recommendations</a></p>
         </div>
       </div>
     </div>
@@ -672,6 +571,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div class="pulse" data-pulse aria-hidden="true"></div>
   </section>
 </main>
+
 
 <footer>
   <div class="wrap">
