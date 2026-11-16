@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Practical AI · Gary Inman</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gary Inman">
+<meta property="og:title" content="Practical AI · Gary Inman">
+<meta property="og:description" content="Practical, safe use of AI for growing construction businesses: finding where it helps, building tools that fit, and bringing your people with you.">
+<meta property="og:url" content="https://garyinman.co.uk/ai.html">
+<meta property="og:image" content="https://garyinman.co.uk/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Practical, safe use of AI for growing construction businesses: finding where it helps, building tools that fit, and bringing your people with you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#F4F6F8; --surface:#FFFFFF; --line:#D9DFE6; --ink:#18222E; --muted:#556272; --brass:#8A5E18;
+  --stage:#141C26; --stage-ink:#EEF2F6; --stage-muted:#A9B5C2; --stage-line:#2D3A48; --gold:#D9A64E;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1200px; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10161D; --surface:#17202A; --line:#2A3642; --ink:#E9EEF3; --muted:#9DAAB8; --brass:#D9A64E;
+  --stage:#0B1016; --stage-ink:#EEF2F6; --stage-muted:#A9B5C2; --stage-line:#26323E; --gold:#E0B262; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10161D; --surface:#17202A; --line:#2A3642; --ink:#E9EEF3; --muted:#9DAAB8; --brass:#D9A64E;
+  --stage:#0B1016; --stage-ink:#EEF2F6; --stage-muted:#A9B5C2; --stage-line:#26323E; --gold:#E0B262; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em;line-height:1.08;font-weight:600}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.stage .eyebrow{color:var(--gold)}
+.h2{font-size:clamp(32px,4vw,48px);font-weight:700}
+.section{padding-block:clamp(72px,9vw,112px);border-top:1px solid var(--line)}
+.frame{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.frame>header{display:flex;flex-direction:column;gap:16px}
+.frame>header p{color:var(--muted);font-size:18px;max-width:42ch}
+.body{display:flex;flex-direction:column;gap:24px;min-width:0}
+@media (max-width:860px){.frame{grid-template-columns:minmax(0,1fr)}}
+
+.site-head{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.mark{font-family:var(--display);font-weight:700;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark i{display:inline-flex;align-items:flex-end;gap:2px;height:16px}
+.mark i b{display:block;width:3px;background:var(--brass);border-radius:1px}
+.nav{display:flex;align-items:center;gap:24px;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px;border:1px solid transparent;font-family:inherit}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.nav .btn-ink{color:var(--paper)}
+.btn-gold{background:var(--gold);color:#1A1307}
+.btn-ghost{border-color:var(--stage-line);color:var(--stage-ink)}
+.nav a.pill{border:1px solid var(--brass);color:var(--brass);border-radius:999px;padding:7px 14px;font-weight:600;white-space:nowrap}
+@media (max-width:760px){.nav a:not(.btn){display:none}}
+@media (max-width:760px){.nav a.pill{display:inline-flex}}
+
+.stage{background:var(--stage);color:var(--stage-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-block:clamp(56px,8vw,100px) clamp(64px,8vw,104px);display:flex;flex-direction:column;gap:24px;max-width:var(--wrap)}
+.hero h1{font-size:clamp(42px,6.4vw,82px);font-weight:700;letter-spacing:-.02em;line-height:.98;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lede{font-size:clamp(19px,1.8vw,22px);line-height:1.5;max-width:52ch;color:var(--stage-muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+
+.offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.offer{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.offer h3{font-size:22px;font-weight:600;letter-spacing:-.015em}
+.offer p{color:var(--muted);font-size:16px}
+@media (max-width:860px){.offers{grid-template-columns:minmax(0,1fr)}}
+
+.engine-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.engine-list li{padding-block:14px;border-top:1px solid var(--stage-line);display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;color:var(--stage-ink)}
+.engine-list li:last-child{border-bottom:1px solid var(--stage-line)}
+.engine-list li::before{content:"";width:10px;height:2px;background:var(--gold);margin-top:13px}
+.stage .frame>header .h2{color:var(--stage-ink)}
+.cycle{border-top:1px solid var(--stage-line);padding-top:40px}
+.cycle-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:44px}
+.cycle-steps li{position:relative;display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--stage-line);border-radius:8px;background:color-mix(in srgb,var(--stage) 80%,var(--stage-ink) 4%)}
+.cycle-steps li:not(:last-child)::after{content:"";position:absolute;right:-34px;top:50%;width:24px;height:2px;background:var(--gold)}
+.cycle-steps li:not(:last-child)::before{content:"";position:absolute;right:-36px;top:calc(50% - 5px);border:6px solid transparent;border-left:8px solid var(--gold);border-right:0}
+.cn{font-family:var(--display);font-weight:600;font-size:14px;color:var(--gold);font-variant-numeric:tabular-nums}
+.cycle-steps b{font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.01em;color:var(--stage-ink);line-height:1.2}
+.cycle-steps li>span:last-child{color:var(--stage-muted);font-size:15.5px}
+.cycle-loop{position:relative;margin:0 12.5%;height:36px;border:2px solid var(--gold);border-top:0;border-radius:0 0 14px 14px;opacity:.85}
+.cycle-loop::before{content:"";position:absolute;left:-8px;top:-10px;border:7px solid transparent;border-bottom:10px solid var(--gold);border-top:0}
+.cycle-loop span{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);background:var(--stage);padding:0 12px;font-size:14px;color:var(--stage-muted);white-space:nowrap}
+@media (max-width:900px){
+ .cycle-steps{grid-template-columns:minmax(0,1fr);gap:34px}
+ .cycle-steps li:not(:last-child)::after{right:auto;left:32px;top:auto;bottom:-26px;width:2px;height:18px}
+ .cycle-steps li:not(:last-child)::before{right:auto;left:27px;top:auto;bottom:-34px;border:6px solid transparent;border-top:8px solid var(--gold);border-bottom:0}
+ .cycle-loop{margin:20px 0 0;height:auto;border:0;text-align:left}
+ .cycle-loop::before{display:none}
+ .cycle-loop span{position:static;transform:none;padding:0;white-space:normal;display:block;padding-left:20px}
+ .cycle-loop span::before{content:"\21BA  ";color:var(--gold)}
+}
+.points{display:flex;flex-direction:column}
+.point{padding-block:22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.point:last-child{border-bottom:1px solid var(--line)}
+.point h3{font-size:21px;font-weight:600;letter-spacing:-.015em}
+.point p{color:var(--muted)}
+
+.proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 28px}
+.proof div{padding-top:18px;border-top:2px solid var(--ink);display:flex;flex-direction:column;gap:6px}
+.proof strong{font-family:var(--display);font-size:clamp(24px,2.6vw,32px);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.proof span{color:var(--muted);font-size:15.5px}
+@media (max-width:640px){.proof{grid-template-columns:minmax(0,1fr)}}
+.todo{display:inline-block;border:1px dashed var(--brass);color:var(--brass);border-radius:6px;padding:6px 10px;font-size:14px;font-weight:500}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-weight:600;color:var(--brass);font-size:15px}
+.steps h3{font-size:20px;font-weight:600}
+.steps p{color:var(--muted);font-size:16px}
+@media (max-width:760px){.steps{grid-template-columns:minmax(0,1fr);gap:20px}}
+
+.contact .wrap{padding-block:clamp(72px,9vw,112px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end}
+.contact h2{font-size:clamp(36px,5vw,64px);font-weight:700;letter-spacing:-.03em}
+.contact h2 em{font-style:normal;color:var(--gold)}
+.reach{display:flex;flex-direction:column;gap:14px}
+.reach .small{color:var(--stage-muted);font-size:15px}
+.email a{font-family:var(--display);font-size:clamp(22px,2.4vw,28px);font-weight:600;color:var(--stage-ink);text-decoration:none;border-bottom:2px solid var(--gold);overflow-wrap:anywhere}
+@media (max-width:860px){.contact .wrap{grid-template-columns:minmax(0,1fr)}}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:28px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Gary Inman, home"><i aria-hidden="true"><b style="height:40%"></b><b style="height:100%"></b><b style="height:65%"></b></i>Gary Inman</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="#help">How I can help</a>
+      <a class="pill" href="bids.html">Bids</a>
+      <a class="pill" href="esg.html">ESG</a>
+      <a class="btn btn-ink" href="#contact">Talk about AI</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="stage hero" aria-labelledby="ai-title">
+    <div class="wrap">
+      <div class="eyebrow">Practical AI for construction businesses</div>
+      <h1 id="ai-title">AI that saves time, <em>and that your people trust.</em></h1>
+      <p class="lede">Practical, safe use of AI, built around how your business actually works, on site and in the office.</p>
+      <div class="cta"><a class="btn btn-gold" href="#contact">Talk about AI</a><a class="btn btn-ghost" href="#help">How I can help</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="help" aria-labelledby="help-title" style="border-top:0">
+    <div class="wrap">
+      <div class="eyebrow">How I can help</div>
+      <h2 class="h2" id="help-title" style="margin-top:14px;max-width:20ch">Start small, build what works.</h2>
+      <div class="offers">
+        <article class="offer"><h3>Find where it helps</h3><p>An honest look at where AI can genuinely save time and add value in your business, and where it can't.</p></article>
+        <article class="offer"><h3>Build tools that fit</h3><p>Bespoke tools and automated routines built around how you already work, not off-the-shelf promises.</p></article>
+        <article class="offer"><h3>Bring your people with you</h3><p>Training, guidance and clear rules on safe use, so people use AI well and with confidence.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" id="engine" aria-labelledby="engine-title">
+    <div class="wrap frame" style="padding-block:clamp(72px,9vw,112px)">
+      <header>
+        <div class="eyebrow">People first</div>
+        <h2 class="h2" id="engine-title">AI succeeds or stalls on people, not technology.</h2>
+        <p style="color:var(--stage-muted)">Adoption depends on trust, habits and leadership. That&rsquo;s the same people and culture work I&rsquo;ve done for 30 years.</p>
+      </header>
+      <div class="body">
+        <p style="color:var(--stage-ink)">Where it often helps in a growing construction business:</p>
+        <ul class="engine-list">
+          <li><span><a href="bids.html" style="color:var(--gold)">Bids and tenders</a>, in line with government guidance (PPN 02/24)</span></li>
+          <li>Reports, minutes and routine paperwork</li>
+          <li>Capturing know-how that lives in a few people&rsquo;s heads</li>
+          <li>Pulling together information from scattered systems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="difference" aria-labelledby="diff-title" style="border-top:0">
+    <div class="wrap frame">
+      <header>
+        <div class="eyebrow">Why me</div>
+        <h2 class="h2" id="diff-title">Doing it, not just talking about it.</h2>
+      </header>
+      <div class="body">
+        <div class="points">
+          <div class="point"><h3>Built and in daily use</h3><p>At Gunning London I&rsquo;ve designed, built and introduced bespoke AI tools and routines that are now part of everyday work.</p></div>
+          <div class="point"><h3>Since 1988</h3><p>I started out in the City building expert systems, an early form of AI that captured specialists&rsquo; know-how.</p></div>
+          <div class="point"><h3>Safe and sensible</h3><p>Clear guidance on what to use AI for, what not to, and how to protect your data and reputation.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div><div class="eyebrow">Get in touch</div><h2 id="contact-title" style="margin-top:14px">Curious what AI could do for you? <em>Let's talk.</em></h2></div>
+      <div class="reach">
+        <p class="small">Tell me where the time goes now, and I&rsquo;ll tell you honestly whether AI can help.</p>
+        <p class="small">Based in Southend-on-Sea, working across London and the South East.</p>
+        <div class="email"><a href="mailto:hello@garyinman.co.uk">hello@garyinman.co.uk</a></div>
+        <p class="small">Or message me on <a href="https://www.linkedin.com/in/gary-inman-growth/" style="color:var(--stage-ink)">LinkedIn</a>.</p>
+        <p class="small"><a href="index.html" style="color:var(--stage-ink)">More about how I work with growing construction businesses</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="wrap"><span>© 2026 Gary Inman Associates</span><span>Southend-on-Sea, Essex</span></div>
+</footer>
+</body>
+</html>
