@@ -376,6 +376,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 @media (max-width:900px){.rq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.rq-grid{grid-template-columns:minmax(0,1fr)}}
 
+.m-short{display:none}
 /* Phone-only folding: extra items hidden behind a "show more" button on small screens */
 .m-toggle{display:none;align-items:center;gap:8px;margin-top:16px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 15px/1.2 var(--body);cursor:pointer}
 .m-toggle::after{content:"\2193";color:var(--brass)}
@@ -387,6 +388,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   .recs{padding-block:48px}
   .frame{gap:24px}
   .body{gap:18px}
+  .m-long{display:none}
+  .m-short{display:block}
+  .t-line,.cr-pull{display:none!important}
+  .recog-head{margin-bottom:28px!important}
 }
 </style>
 
@@ -473,10 +478,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <header>
         <div class="eyebrow">Working in partnership</div>
         <h2 class="h2" id="partnership-title">Alongside the people who lead the business.</h2>
-        <p>Part sounding board, part strategist, part hands-on support. I work alongside owners and leadership teams to strengthen how the business is led and run.</p>
+        <p class="m-long">Part sounding board, part strategist, part hands-on support. I work alongside owners and leadership teams to strengthen how the business is led and run.</p>
+        <p class="m-short">Part sounding board, part strategist, part hands-on support for the people who lead the business.</p>
         <div class="shape">
           <h3>Shaped around you</h3>
-          <p>It works best as an ongoing relationship, but there's no fixed formula. It might be regular one-to-one time, working alongside your team, hands-on support through a particular change, or a mix that shifts as the business grows. It can also be a fixed-term assignment with a clear end, such as an interim people lead or leading a change programme.</p>
+          <p class="m-long">It works best as an ongoing relationship, but there's no fixed formula. It might be regular one-to-one time, working alongside your team, hands-on support through a particular change, or a mix that shifts as the business grows. It can also be a fixed-term assignment with a clear end, such as an interim people lead or leading a change programme.</p>
+        <p class="m-short">It works best as an ongoing relationship, shaped around what the business needs. It can also be a fixed-term assignment.</p>
         </div>
       </header>
       <div class="body">
@@ -499,7 +506,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <header>
         <div class="eyebrow">For owners, directors and leadership teams</div>
         <h2 class="h2" id="corner-title">A perspective you can't get from inside.</h2>
-        <p>Whether it's one owner or a board of directors, the hardest things to see are the ones you're closest to. Working with so many other businesses gives me a reference point few leadership teams have.</p>
+        <p class="m-long">Whether it's one owner or a board of directors, the hardest things to see are the ones you're closest to. Working with so many other businesses gives me a reference point few leadership teams have.</p>
+        <p class="m-short">The hardest things to see are the ones you're closest to. Working with so many businesses gives me a reference point few leadership teams have.</p>
       </header>
       <div class="body">
         <div class="m-fold"><div class="corner-list corner-3">
@@ -521,7 +529,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <header>
         <div class="eyebrow">Specialist themes</div>
         <h2 class="h2" id="exp-title">The whole partnership, or a specific theme.</h2>
-        <p>These themes run through every partnership. Each can also be a starting point in its own right, and focused work on one often opens up wider change. How I contribute depends on what helps most: doing the work, coaching or training your people, or building the capability in-house.</p>
+        <p class="m-long">These themes run through every partnership. Each can also be a starting point in its own right, and focused work on one often opens up wider change. How I contribute depends on what helps most: doing the work, coaching or training your people, or building the capability in-house.</p>
+        <p class="m-short">These run through every partnership, and each can also be a starting point on its own.</p>
       </header>
       <div class="body">
         <div class="themes">
